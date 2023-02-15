@@ -1,10 +1,8 @@
+
 import numpy as np
-# 0.1
-# n=np.linspace(0, 20, 28).reshape(4, 7)
-# n1 = (n - np.min(n)) / (np.max(n) - np.min(n))
-# print(n1)
 # 0.2
 # m=np.random.randint(0,10,size=(8,10))
+# print(m)
 # n=np.sum(m,axis=0)
 # mins=np.min(n)
 # mins_index=np.where(np.sum(mins)==mins)
@@ -34,14 +32,14 @@ import numpy as np
 # print(np.median(data[:,1],axis=0))
 # print(np.median(data[:,2],axis=0))
 # 3
-data=np.loadtxt(fname='minutes_n_ingredients.csv',dtype='int32',delimiter=',',skiprows=1)
+# data=np.loadtxt(fname='minutes_n_ingredients.csv',dtype='int32',delimiter=',',skiprows=1)
 # data[:,2]=np.clip(data[:,2],data[:,2],np.quantile(data[:,2],0.75))
 # print(data)
 # 4
 # data=np.loadtxt(fname='minutes_n_ingredients.csv',dtype='int32',delimiter=',',skiprows=1)
-# data1=np.where(data==0,1,data)
-# print(data1)
-# print(np.count_nonzero(data[:,1]==0))
+# num=np.count_nonzero(data[:,1]==0)
+# data[:,1]=np.where(data[:,1]==0,1,data[:,1])
+# print(data)
 # 5
 # print(len(np.unique(data,axis=1)))
 # # 6
