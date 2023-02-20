@@ -1,5 +1,9 @@
 
 import numpy as np
+#0.1
+data1 = np.random.uniform (0, 20, 28).reshape(4, 7)
+massive_read = (data1 - np.min(data1)) / (np.max(data1) - np.min(data1))
+print(massive_read)
 # 0.2
 # m=np.random.randint(0,10,size=(8,10))
 # print(m)
